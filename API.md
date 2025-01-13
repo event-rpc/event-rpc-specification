@@ -34,7 +34,7 @@ A general message envelope contains EventRPC specific data that is to be shared 
 -   `correlation` the correlation ID is defined by a client message, and returned by the server
     -   this ID allows the client to correlate a `result` message with a command, and a `update` message with a subscription
     -   internally, it is useful to the implementation for tracking state and subscribers
--   `type` denotes the [type](##Messages) of the EventRPC message - _update_ sends a state update to the client, this can be an aggregate or a projection update
+-   `type` denotes the [type](## Messages) of the EventRPC message - _update_ sends a state update to the client, this can be an aggregate or a projection update
 -   `meta` is an object that can contain any metadata required by middlewares and users
 -   `payload` contains the data of the message
 
